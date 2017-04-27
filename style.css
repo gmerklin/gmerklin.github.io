@@ -1,0 +1,253 @@
+
+
+/* start with clearing all of the defaults */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+body{
+    font-family: "Arno Pro", serif ;
+    font-weight: 400 ;
+    width: 1366px ;
+}
+p{
+    padding-bottom: 16px ;
+}
+.page-container{
+    height: 100% ;
+    overflow: auto ;
+    background-color: lightgray ;
+    position: relative ;
+}
+.topbar{
+    height: 138px ;
+    width: 1366px ;
+    background-color: #fff ;
+    position: relative ;
+}
+#logo{
+    width: 128px ;
+    position: relative;
+    top: 50px ;
+    left: 50px ;
+
+}
+#logo a{
+    color: black  ;
+    text-decoration: none ;
+}
+.nav a{
+    font-family: "Source Sans Pro" ;
+    /*            font-weight: 400  ;*/
+    color: black ;
+    text-decoration: none ;
+
+}
+.nav a:hover{
+    text-decoration: underline ;
+}
+#navbar{
+    margin-left: 335px ;
+}
+.nav li{
+    display: inline ;
+    padding: 1em ;
+}
+.navlink-current{
+    font-weight: 900 ;
+}
+.nav2{
+    position: absolute ;
+    bottom: 0px ;
+    left: 340px ;
+}
+ul.breadcrumb{
+    font-family: "Source Sans Pro" ;
+    font-size: .75em ;
+    padding: 10px 10px ;
+    list-style: none ;
+}
+ul.breadcrumb li{
+    display: inline ;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: ">" ;
+}
+.inpage{
+    position: absolute ;
+    top: 85px ;
+    left: 125px ;
+}
+.inpagenav{
+    list-style:none ;
+}
+.inpage a{
+    font-family: "Source Sans Pro";
+    text-decoration: none ;
+    color: black ;
+}
+.main-container{
+    /*            height: 100%;*/
+    background-color: lightgray ;
+    overflow: hidden ;
+}
+.sidestuff{
+    width: 108px ;
+    height: 100% ;
+    background-image: url(left-border.jpg);
+    float: left ;
+
+    /*
+    position: relative ;
+    overflow: hidden;
+    */
+
+}
+.image-box{
+    height: 460px ;
+    width: 780px ;
+    margin-left: auto ;
+    margin-right: auto ;
+    z-index: 10 ;
+}
+#wordmark-container{
+    width: 375px ;
+    height: 85px ;
+    margin-left: 200 ;
+    /*            margin-right: auto ;*/
+    background-color: white ;
+    position:absolute ;
+    top: 0px ;
+    text-align: center ;
+    padding-top: 20px ;
+    padding-left: 20px ;
+    padding-right: 20px ;
+}
+.middlestuff{
+    position: absolute;
+    left: 108px ;
+    width: 1258px ;
+    /*            margin-left: 288px ;*/
+
+    height: 100% ;
+    /*                        height: 800px ;*/
+    /*            overflow: scroll ;*/
+}
+
+/*
+#welcome-text{
+                float: left ;
+    position: relative ;
+    width: 548px ;
+    padding-top: 50px ;
+    padding-bottom: 50px ;
+    margin-bottom: 75px ;
+    margin-left: auto ;
+    margin-right: auto ;   
+}
+*/
+.main-content{
+    position: relative ;
+    width: 548px ;
+    padding-top: 50px ;
+    padding-bottom: 50px ;
+    margin-bottom: 75px ;
+    margin-left: auto ;
+    margin-right: auto ; 
+}
+#totterpic{
+    float: left ;
+    margin-right: 16px ;
+}
+
+h1{
+    font-size: 3em ;
+}
+h2{
+    font-size: 2em ;
+}
+h3{
+    font-size: 1.5em ;
+}
+h4{
+    font-size: 1.2em ;
+}
+em{
+    font-style: italic ;
+}
+footer{
+    height: 75px ;
+    width: 1366px ;
+    background-color: white ;
+    position: fixed;
+    bottom: 0px ;
+    /*            overflow: scroll;*/
+}
+#social{
+    width: 75px ;
+    position: absolute ;
+    margin-left:  1000px ;
+    top: 25px;
+}
+
+#copyright{
+    padding-top: 35px ;
+    margin-left: 345px ;
+    font-family: "Source Sans Pro" ;
+    font-size: 0.75em ;
+}
+#consultation{
+    margin-bottom: 5px ;
+    margin-top: 5px ;
+}
+#musical{
+    margin-bottom: 5px ;
+    margin-top: 5px ;
+}
+.services{
+    padding-left:15px ;
+}
+#recents-text{
+    width:800px ;
+    margin-left: 350px ;
+}
+.resume{
+    margin-bottom: 1em ;
+}
+.job_table{
+    margin-bottom: 1em ;
+}
+th, td {
+    padding: 10px  10px 10px 10px ;
+}
+td.church{
+    width: 275px;
+}
+td.city{
+    width: 175px ;
+}
+td.dates{
+    width: 200px ;
+}
+.info h2 {
+    display: none ;
+}

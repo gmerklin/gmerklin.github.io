@@ -22,20 +22,50 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
+/*generic settings applicable to all pages */
+/*
+
+html{
+    min-height: 100% ;
+}
+*/
 body{
-    font-family: "Arno Pro", serif ;
+    font-family: "arno-pro", "Arno Pro", serif ;
     font-weight: 400 ;
     width: 1366px ;
+    min-height: 100% ;
+}
+
+h1{
+    font-size: 3em ;
+}
+h2{
+    font-size: 2em ;
+}
+h3{
+    font-size: 1.5em ;
+}
+h4{
+    font-size: 1.2em ;
+}
+em{
+    font-style: italic ;
 }
 p{
     padding-bottom: 16px ;
 }
+
 .page-container{
-    height: 100% ;
+/*    min-height: 100% ;*/
+ 
     overflow: auto ;
     background-color: lightgray ;
     position: relative ;
 }
+
+/* things in our header bar */
+
 .topbar{
     height: 138px ;
     width: 1366px ;
@@ -45,7 +75,7 @@ p{
 #logo{
     width: 128px ;
     position: relative;
-    top: 50px ;
+    top: 40px ;
     left: 50px ;
 
 }
@@ -54,7 +84,7 @@ p{
     text-decoration: none ;
 }
 .nav a{
-    font-family: "Source Sans Pro" ;
+    font-family: "source-sans-pro", "Source Sans Pro", sans-serif;
     /*            font-weight: 400  ;*/
     color: black ;
     text-decoration: none ;
@@ -79,7 +109,7 @@ p{
     left: 340px ;
 }
 ul.breadcrumb{
-    font-family: "Source Sans Pro" ;
+    font-family: "source-sans-pro", "Source Sans Pro", sans-serif ;
     font-size: .75em ;
     padding: 10px 10px ;
     list-style: none ;
@@ -92,6 +122,8 @@ ul.breadcrumb li+li:before {
     color: black;
     content: ">" ;
 }
+
+/*additional navigation links appearing for now only on the services and past work page */
 .inpage{
     position: absolute ;
     top: 85px ;
@@ -101,18 +133,32 @@ ul.breadcrumb li+li:before {
     list-style:none ;
 }
 .inpage a{
-    font-family: "Source Sans Pro";
+    font-family: "source-sans-pro", "Source Sans Pro", sans-serif;
     text-decoration: none ;
     color: black ;
 }
+
+/* content styling for the main body of the page, below the header bar */
 .main-container{
     /*            height: 100%;*/
+    min-height: 100% ;
+    position: relative ;
+/*
+    padding-bottom: 1000em ;
+    margin-bottom: -1000em ;
+*/
     background-color: lightgray ;
     overflow: hidden ;
+   
 }
+
+/*styling for the side eye-candy */
 .sidestuff{
     width: 108px ;
-    height: 1000px ;
+/*    min-height: 100% ;*/
+    padding-bottom: 1000em ;
+    margin-bottom: -1000em ;
+/*    height: 1000px ;*/
     background-image: url(left-border.jpg);
     float: left ;
 
@@ -142,29 +188,21 @@ ul.breadcrumb li+li:before {
     padding-left: 20px ;
     padding-right: 20px ;
 }
+/* the main section of the pages including photos on landing page */
 .middlestuff{
-    position: absolute;
-    left: 108px ;
+    position: relative;
+    float: right ;
+/*    left: 108px ;*/
     width: 1258px ;
     /*            margin-left: 288px ;*/
 
-    height: 100% ;
+    min-height: 100% ;
     /*                        height: 800px ;*/
     /*            overflow: scroll ;*/
 }
 
-/*
-#welcome-text{
-                float: left ;
-    position: relative ;
-    width: 548px ;
-    padding-top: 50px ;
-    padding-bottom: 50px ;
-    margin-bottom: 75px ;
-    margin-left: auto ;
-    margin-right: auto ;   
-}
-*/
+/*the container for the text that appears on all of the pages */
+
 .main-content{
     position: relative ;
     width: 548px ;
@@ -174,32 +212,16 @@ ul.breadcrumb li+li:before {
     margin-left: auto ;
     margin-right: auto ; 
 }
-#totterpic{
-    float: left ;
-    margin-right: 16px ;
-}
 
-h1{
-    font-size: 3em ;
-}
-h2{
-    font-size: 2em ;
-}
-h3{
-    font-size: 1.5em ;
-}
-h4{
-    font-size: 1.2em ;
-}
-em{
-    font-style: italic ;
-}
+
 footer{
     height: 75px ;
     width: 1366px ;
     background-color: white ;
-/*    position: fixed;*/
+/*
+    position: fixed;
     bottom: 0px ;
+*/
     /*            overflow: scroll;*/
 }
 #social{
@@ -212,8 +234,13 @@ footer{
 #copyright{
     padding-top: 35px ;
     margin-left: 345px ;
-    font-family: "Source Sans Pro" ;
+    font-family: "source-sans-pro", "Source Sans Pro", sans-serif ;
     font-size: 0.75em ;
+}
+/* specific page stylings */
+#totterpic{
+    float: left ;
+    margin-right: 16px ;
 }
 #consultation{
     margin-bottom: 5px ;

@@ -1,277 +1,123 @@
-<!doctype html>
-<html lang='en'>
+<!Doctype html>
+<html>
     <head>
         <meta charset='utf-8'>
-        <title>Bob Dylan as Richard Wagner</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <style>
-            body {
-                font-family: 'Open Sans', sans-serif;
-            }
-            p#firstgraf::first-letter{
-                font-size: 200%;
-            }
-        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Seraphim Singers</title>
+        <link rel="stylesheet" type="text/css" href="styles/reset.css">
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header>
-            <div id="subscribe">
-                <a href="https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjstmRb00Ao5BGQcAw7P4uLHjFytVeZZfqUda_mMk9-yUW-3jawN3IL0tppvfdC3Rbs-jdnTSXn1uJiNu_88z7bToEWrUXDlqpNragZCUXWXbWjYR-9Ts7IfuHRXUJzs7G5NZhnqF2oaw-L36LUu4hju9BusLlKg6osQJOAhqXTf-WgPkwq8CpkDTJe2MjaWhOlQGnnRqt5cq0r-UYFE_UX8vCS2ZwpIlHVm7sSgmv206-Lyiepwz1CF2ahq9Rf9PALFjFC2IVmxe2QDcXtWm&sig=Cg0ArKJSzKl5YDJcsS4OEAE&urlfix=1&adurl=https://subscribe.newyorker.com/subscribe/newyorker/110043%3Fsource%3DAMS_NYR_COLLAPSED_NAVBAR%26pos_name%3DAMS_NYR_COLLAPSED_NAVBAR">Subscribe for $1 a week and get a tote</a>
-            </div>
-            <div id="magtitle">
-                <p id="magtitlesmall">The</p>
-                <p id="magtitlebig">New Yorker</p>
-            </div>
-            <div id="upperrightstuff">
-                <ul id="upperrightlist">
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="signin.html">Sign In</a></li>
-                    <li><a href="link.html">Link Your Subscription</a></li>
-                    <li><a href="search.html"><img src="spyglass.jpg" alt="search_this"></a></li>
-                </ul>
+    </header>
+            <!--  Topnav -->
+            <div class="topnav" id="myTopnav">
+                <a href="#banner-container" class="active">Home</a>
+                <a href="#season_container">This Season</a>
+                <a href="#list_container">Stay in Touch!</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Dropdown 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div> 
+                <a href="#about">About</a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
 
-            <hr>
-            <nav>
-                <ul id="navbox">
-                    <li><a href="https://www.newyorker.com/news">News</a></li>
-                    <li><a href="https://www.newyorker.com/culture">Culture</a></li>
-                    <li><a href="https://www.newyorker.com/books">Books</a></li>
-                    <li><a href="https://www.newyorker.com/business">Business &amp; Tech</a></li>
-                    <li><a href="https://www.newyorker.com/humor">Humor</a></li>
-                    <li><a href="https://www.newyorker.com/cartoons">Cartoons</a></li>
-                    <li><a href="https://www.newyorker.com/magazine">Magazine</a></li>
-                    <li><a href="http://video.newyorker.com/">Video</a></li>
-                    <li><a href="https://www.newyorker.com/podcast">Podcasts</a></li>
-                    <li><a href="https://www.newyorker.com/archive">Archive</a></li>
-                    <li><a href="https://www.newyorker.com/goings-on-about-town/">Goings On</a></li>
-                    <li id="subscribe_2"><a href="https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjstutQ_T4tvhPz8aIKUnWZ2lvaZVMSKi3f7RR8A_moHwCRd_wixlo-p_iBsB1nTVUVfa0E6Xs55qiAndeVmnlBFAf1RnOIA_9ggyUsD-5t-TN9oNeYDh4PI9YxGAkBaHq5PmJqc7g6STIfmln26pnsoBcsVwGiUraKaCMhfrRpLS681SQIvaiLpiCfpLsJdEEALtH0rywMN6YX8Zm8l0WlOBcP6RO0o2emrdwPN9nl2mZ7GHsNk8o_XElZtZZKzl9nhvEPkln7eGaANWdyCZ&sig=Cg0ArKJSzFjq1FQFcfK6EAE&urlfix=1&adurl=https://subscribe.newyorker.com/subscribe/newyorker/110043%3Fsource%3DAMS_NYR_GLOBAL_NAVBAR%26pos_name%3DAMS_NYR_GLOBAL_NAVBAR">Subscribe</a></li>                
-                </ul>
-            </nav>
-        </header>    
-        <article>
-            <hr>
-            <div id="articleheader">
-                <h3  class="sec_text" id="sectiontitle">Cultural Comment</h3>
-                <h1>BOB DYLAN AS RICHARD WAGNER</h1>
-                <div id="authorblock">
-                    <ul>
-                        <li><a href="https://www.newyorker.com/contributors/alex-ross"><img class="small_author_pic" src="https://media.newyorker.com/photos/59097b73019dfc3494ea36d5/1:1/w_48,c_limit/ross-alex.png" alt="alexross"></a></li>
-                        <li>By <a href="https://www.newyorker.com/contributors/alex-ross">Alex Ross</a></li>
-                        <li>October 14, 2017</li>
-                    </ul>
+    
+        <main>
+            <div id="banner-container">
+                <div class="col-12" id="banner">
+                    <!--                    <h1>The Seraphim Singers</h1>-->
+                    <img src="images/seraphimlogo4.svg" alt="seraphim logo">
                 </div>
             </div>
-            <hr>
-            <div id="shares">
-                <ul>
-                    <li id="fbook"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.newyorker.com%2Fculture%2Fcultural-comment%2Fbob-dylan-as-richard-wagner&display=popup&ref=plugin"><img src="" alt="facebook"></a> </li>
-                    <li id="twitter"><a href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fwww.newyorker.com%2Fculture%2Fcultural-comment%2Fbob-dylan-as-richard-wagner&text=Bob%20Dylan%20as%20Richard%20Wagner&tw_p=tweetbutton&url=https%3A%2F%2Fwww.newyorker.com%2Fculture%2Fcultural-comment%2Fbob-dylan-as-richard-wagner"><img src="" alt="twitter"> </a></li>
-                    <li id="email"><a href="mailto:?subject=From newyorker.com: Bob Dylan as Richard Wagner&body=If you came of age in the nineteen-sixties, you had to know Dylan; in the eighteen-eighties, it had to be Wagner.
-                        https://www.newyorker.com/culture/cultural-comment/bob-dylan-as-richard-wagner"><img src="" alt="e-mail"> </a></li>
-                    <li id="print"><a href="https://www.newyorker.com/culture/cultural-comment/bob-dylan-as-richard-wagner#"> <img src="" alt="print"></a></li>
-                </ul>
+            <div class="col-12" id="feature_container">
+                <div class="col-6" id="feature">
+                     <img src="images/churchtower_mid.jpg" alt="churchtower">
+                    <h2 class="col-6" id="headline">Our Next Concert</h2>
+                    <h2 class="col-6" id="concert_title">From the Old World to the New</h2>
+                   
+                </div>
+                <div  class="col-6 web_text" id="feature_text">
+              
+                     <h4>From the Old World to the New</h4>
+                          <p>
+                    Sunday, April 22, 3 pm <br>
+                    Eliot Church, 474 Centre St, Newton<br>
+                    Sunday, April 29, 3 pm <br>(Pre-concert talk at 2:30 pm) <br>
+                    First Church Congregational, <br>11 Garden St, Cambridge, MA <br>
+                    </p>
+                   
+                   
+                <p>
+                    Rheinberger’s sumptuous Mass for double choir; encore performances of commissions by Avner Dorman and local composers James Woodman, Eric Sawyer, and Richard Clark; and English works from the 16th and 20th centuries. 
+                    With Heinrich Christensen, organ.</p>
+                    
             </div>
-            <div id="topphoto">
-                <figure>
-                    <img src="https://media.newyorker.com/photos/59097ae6ebe912338a37852e/master/w_813,c_limit/Ross-Dylan.jpg" height="350" width="350" alt="photograph of a young bob dylan">
-                    <figcaption> If you came of age in the nineteen-sixties, you had to know Bob Dylan; in the eighteen-eighties, it had to be Richard Wagner.<span id="photocredit">PHOTOGRAPH BY DOUG MCKENZIE / GETTY</span></figcaption>
-                </figure>
             </div>
-            <section id="articletext">
-                <p id="firstgraf">
-                    The announcement that Bob Dylan will be given the <a href="http://www.newyorker.com/culture/cultural-comment/lets-celebrate-the-bob-dylan-nobel-win">Nobel Prize in Literature</a> set off a predictable but not entirely pointless controversy. <a href="http://www.wsj.com/articles/is-bob-dylan-literature-1476401068">Is Dylan literature?</a> If so, does he deserve a place next to Thomas Mann and T. S. Eliot? And, even then, is there a pragmatic argument to be made against giving another big prize to a pop-culture colossus at a time when so many worthy writers struggle in obscurity? Although my Dylan fandom is as immoderate as anyone’s—in 1998, I followed him around the country for several weeks and <a href="http://www.newyorker.com/magazine/1999/05/10/the-wanderer">wrote about the experience</a> for <i>The New Yorker</i>—I’ve been half-swayed by the less huffy protests. As the novelist Hari Kunzru has <a href="https://twitter.com/harikunzru">observed</a>, a Nobel citation can exponentially increase a writer’s audience and help keep independent publishers afloat; in 2016, that opportunity was lost. On the other hand, Dylan did write the line <q>Behind every beautiful thing there’s been some kind of pain.</q>
-                </p>
-                <p>
-                    The questions posed by this latest Dylan coronation go deeper than the winner-takes-all cultural economy of the early twenty-first century. We are confronted, once again, with the intricately tangled relationship between words and music. What happens when they merge? How does the language of one affect the language of the other? When a sung text takes hold of us, which is the more active force? (Two operas ponder the issue: Salieri’s “Prima la musica e poi le parole”—“First the Music, Then the Words”—and Strauss’s “Capriccio,” which asks, <q>Word or tone—which do you prefer?</q>) And how do we comprehend the rare artist who transforms both worlds at once?
-                </p>
-                <p>
-                    The debate over the proper categorization of Dylan’s talent has been going on for more than fifty years. By the time he released “Highway 61 Revisited,” in 1965, he was being described not just as a songwriter in the American popular tradition but also as a poet in the vein of Whitman and Ginsberg. In December, 1965, Thomas Meehan wrote a <a href="http://query.nytimes.com/mem/archive/pdf?res=9800E6D71639E33ABC4A52DFB467838E679EDE">piece for the <i>Times Magazine</i></a> asking whether Dylan was the <q>best writer in America today.</q> A Brown University student was quoted saying, <q>Any one of [Dylan’s] songs, like ‘A Hard Rain’s a-Gonna Fall,’ is more interesting to us, both in a literary and a social sense, than an entire volume of Pulitzer Prize verse by someone like Robert Lowell.</q> People like Lowell tended not to agree. Stanley Kunitz and Louis Simpson, when approached by Meehan, preferred to label Dylan a “popular artist” or “entertainer” rather than a poet. W. H. Auden diplomatically said, <q>I am afraid I don’t know his work at all.</q>
-                </p>
-                <p>
-                    There had been a phenomenon like this before. In the nineteenth century, arguments raged around a figure who made his name in the musical sphere but who also claimed literary significance. He was attacked as a dilettante, one whose music wavered between bombast and bizarrerie, whose poetic productions mixed platitude and gibberish. He was aligned in his early years with revolutionary politics and later appeared to betray those politics in favor of conservatism and mysticism. All the same, he became a magnetic figure for younger generations and exerted a vast influence on literature and other art forms. If you came of age in the nineteen-sixties and seventies, you had to know Dylan; in the eighteen-eighties and nineties, it had to be Richard Wagner.</p>
-                <p>
-                    To place Dylan in the same sentence as Wagner is to invite various objections, not least from the principals. A composer who infamously thought that Jews lacked the capacity for original musical creation would probably have made no exception for the former Robert Zimmerman. Dylan, for his part, seems to favor Mozart and Beethoven over Wagner, whom he <a href="http://www.deseretnews.com/article/327290/DYLANS-JUST-A-WORKING-MUSICIAN---AWASH-IN-ADULATION.html?pg=all">colorfully described</a>, in a 1993 interview, as “one of the archcriminals of all time.” The personalities could not be more unalike. Wagner was antic, garrulous, incapable of keeping his mouth shut. Dylan is, by all reports, shy, sly, inveterately oblique. (If members of the Swedish Academy believe that _this _time Dylan will bask in the attention and socialize with those who are honoring him, they haven’t spent much time on Maggie’s Farm.)
-                </p>
-                <p>
-                    Yet the similarities are more than trivial. Nietzsche wrote that Wagner was, at bottom, neither a composer nor a poet but an actor, a theatrical personality, who seized on opera as his medium: “He belongs elsewhere, not in the history of music; one should not confuse him with the genuine masters of that. . . . He _became _a musician, he _became _a poet because the tyrant within him, his actor’s genius, compelled him.” The same might be said of the movie-mad kid from Hibbing, Minnesota. In any case, Dylan’s musical credentials are still being questioned. He could never really sing, people say; he can’t play the guitar particularly well; the songs themselves are said to be simplistic and unoriginal. With both Wagner and Dylan, these rumors of musical incapacity are erroneous, but the perception is telling: talent is not following the usual trajectory.
-                </p>
-                <p>
-                    On the literary side, German speakers routinely wince at the more convoluted passages in Wagner’s librettos and prose writings. Audiences spellbound by <a href="http://www.newyorker.com/magazine/2016/10/17/wagner-weekend">“Tristan und Isolde”</a> at the Metropolitan Opera will inevitably stumble over the subtitles (“universal stream of the World-Breath” and so on). Likewise, even Dylan’s greatest songs can look a little flat and feeble on the page. Listening to the third verse of “Simple Twist of Fate” never fails to make me stop in wonder:</p>
-                <blockquote>
-                    A saxophone someplace far off played<br>
-                    As she was walking on by the arcade<br>
-                    As the light burst through a beat-up shade<br>
-                    Where he was waking up<br>
-                    She dropped a coin into the cup<br>
-                    Of a blind man at the gate<br>
-                    And forgot about a simple twist of fate.
-                </blockquote> 
-                <p>
-                    But I doubt anyone would think twice about this passage without the gently devastating music that accompanies it—the vocal line that climbs an octave to “gate” as a descending chromatic line unwinds in the bass. (Incidentally, it is more or less the <a href="http://www.therestisnoise.com/2008/05/chapter-17-i-saw-the-light.html">same bass line</a> as the one that propels Dido’s Lament, in Purcell’s “Dido and Aeneas”—an aria that ends, “Remember me, but ah! forget my fate.”)
-                </p>
-                <p>
-                    What matters is the explosive fusion of words and music, and in both cases music is the igniting element. In my 1999 article, I argued that the musical component of Dylan’s genius has been consistently undervalued: the songs have an unshakable structure, an old-as-the-hills presence. Furthermore, Dylan’s habit of constantly fiddling with his work in performance, however much it may irritate his longtime fans, gives the songs mobility in time: they are saved from becoming fixed objects, cultural bric-a-brac. You could compare Dylan’s fluidity to the often bewildering metamorphoses that stage directors impose on Wagner operas—variations that the composer may not have explicitly desired but that the works themselves seem to demand, not least because of their dreamlike sense of time and space.</p>
-                <p>
-                    Still, it’s never the music alone. The Prelude to “Tristan” is an immensely seductive stretch of orchestral writing, but it functions as a shimmering backdrop to a drama that delivers shocks of contrast: for example, Isolde rasping, “Who dares to mock me?” as she enters. Dylan, too, burns brightest when music and lyrics operate not in tandem but at cross-purposes. In “The Groom’s Still Waiting at the Altar”—listen to the <a href="https://soundcloud.com/erwin-boermans/bob-dylan-and-mike-bloomfield">1980 live version with Mike Bloomfield</a>—the band barges through a basic blues stomp while Dylan spits out lyrics that wallow in a mystical mire:
-                </p>
-                <blockquote>
-                    Prayed in the ghetto with my face into the cement<br>
-                    Heard the last moan of the boxer, seen the massacre of the innocent<br>
-                    Felt around for the light switch, became nauseated<br>
-                    Just me and an overweight dancer between walls that have deteriorated
-                </blockquote>
-                <p>
-                    You have a feeling, at such moments, that popular tradition has been possessed by an alien, ironic intelligence. It’s unsettling to realize that the head-bopping music and the mind-bending words are products of the same disjunctive imagination. The song becomes a vortex. It thus becomes just a little Wagnerian.
-                </p>
-                <p>
-                    The debate over Dylan’s Nobel will go on for a while, as it should: lockstep praise is never healthy. Chances are, however, that in fifty years the Swedish Academy, which has made any number of dubious and perplexing choices over the years, will have no reason to feel ashamed of the selection of Bob Dylan—and will have no need to explain who he was. Love him or hate him, he is a towering figure in modern culture: his appeal has transcended generations and inspired small libraries of commentary. He deserves the Nobel Prize in Word and Tone, but this will have to do.
-                </p>
-            </section>
-            <div id="bottomauthorcredit">
-                <a href="https://www.newyorker.com/contributors/alex-ross">
-                    <img src="https://media.newyorker.com/photos/59097b73019dfc3494ea36d5/1:1/w_130,c_limit/ross-alex.png" alt="alex ross"></a>
-                <p>
-                    Alex Ross, the magazine’s music critic since 1996, is the author of “The Rest Is Noise” and “Listen to This.”
-                    <a href="https://www.newyorker.com/contributors/alex-ross">Read more »</a>
-                </p>
+        <div class="col-12" id="season_container">
+            <h2>This Season</h2>
+            <div class="col-6" id="season_photo">
             </div>
-        </article>
-        <hr>
-        <div id="most_popular">
-            <hr>
-            <p>Most Popular</p>
-            <hr>
-            <ol>
-                <li><p class="linkheader">A Reporter At Large</p><a href="https://www.newyorker.com/magazine/2018/02/12/the-white-darkness">The White Darkness: A Journey Across Antarctica</a><p class="most_pop_byline">By <a href="https://www.newyorker.com/contributors/david-grann">David Grann</a></p></li>
-                <li><p class="linkheader">Satire from the Borowitz Report</p><a href="https://www.newyorker.com/humor/borowitz-report/military-refuses-to-participate-in-trumps-parade-citing-bone-spurs">Military Refuses to Participate in Trump’s Parade, Citing Bone Spurs</a><p class="most_pop_byline">By <a href="https://www.newyorker.com/contributors/andy-borowitz">Andy Borowitz</a></p></li>
-                <li><p class="linkheader">Annals of Technology</p><a href="https://www.newyorker.com/magazine/2018/02/12/why-paper-jams-persist">Why Paper Jams Persist</a><p class="most_pop_byline">By <a href="https://www.newyorker.com/contributors/joshua-rothman">Joshua Rothman</a></p></li>
-                <li><p class="linkheader">American Chronicles</p><a href="https://www.newyorker.com/magazine/2018/02/12/is-there-a-smarter-way-to-think-about-sexual-assault-on-campus">Is There a Smarter Way to Think About Sexual Assault on Campus?</a><p class="most_pop_byline">By <a href="https://www.newyorker.com/contributors/jia-tolentino">Jia Tolentino</a></p></li>
-                <li><p class="linkheader">Daily Comment</p><a href="https://www.newyorker.com/news/daily-comment/raining-on-trumps-parade">Raining on Trump’s Parade</a><p class="most_pop_byline">By <a href="https://www.newyorker.com/contributors/adam-gopnik">Adam Gopnik</a></p></li>
-            </ol>
-            <hr>
+            <div class="col-6 web_text" id="season_text">
+                <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother’s keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
+            </div>
         </div>
-        <div id="more">
-            <h5>More</h5>
-            <ul>
 
-                <li><a href="dylan.html">Bob Dylan</a></li>
-                <li><a href="music.html">Music</a></li>
-                <li><a href="nobel.html">Nobel Prize</a></li>
-                <li><a href="wagner.html">Richard Wagner</a></li>
-            </ul>
+        <div class="col-12" id="about_us_container">
+            <h2>About Us</h2>
+            <div class="col-6" id="about_us_photo"></div>
+            <div class="col-6 web_text" id="about_us_text">
+                <p>Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass.</p>
+                <p>Now that we know who you are, I know who I am. I’m not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain’s going to be? He’s the exact opposite of the hero. And most times they’re friends, like you and me! I should’ve known way back when... You know why, David? Because of the kids. They called me Mr Glass.</p>
+            </div>
         </div>
-        <hr>
-        <div id="subscribe_advert">
-            <a href="subscribe.html">Read something that means something.<br>
-                Try The New Yorker for a dollar a week. <span id="blue">Subscribe now. »</span></a>
+        <div class="col-12" id="watch_container">
+            <h2>Watch and Listen</h2>
+            <div class="col-6 videowrapper" id="watch_video_box">
+                <!--                    <div class="videowrapper">-->
+                <iframe src="https://player.vimeo.com/video/254571622" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <!--                        </div>-->
+                <!--                    <p><a href="https://vimeo.com/254571622">Mendelssohn - Laudate pueri - Sample</a> from <a href="https://vimeo.com/user50477703">John Totter</a> on <a href="https://vimeo.com">Vimeo</a>.</p>-->
+            </div>
+            <div class="col-6 web_text" id="watch_text_box">
+                <p>My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?</p></div>
         </div>
-        <hr>
-        <div id="culture_rev_signup">
-            Get a recap of the week in culture every weekend, in your in-box. Sign up for our Culture Review newsletter.
-            <form>
-                <input type="email" name="email" placeholder="Enter your e-mail">
-                <input type="submit" value="Go">
-            </form>
+        <div class="col-12" id="list_container">
+            <h2>Stay in Touch!</h2>
+            <div class="col-6" id="list_photo_box"></div>
+            <div class="col-6 web_text" id="list_text_box">
+                <p>Now that we know who you are, I know who I am. I’m not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain’s going to be? He’s the exact opposite of the hero. And most times they’re friends, like you and me! I should’ve known way back when... You know why, David? Because of the kids. They called me Mr Glass.</p></div>
         </div>
-        <hr>
-        <section id="recommended_stories">
-            <h1>Recommended Stories</h1>
-            <hr>
+        <div class="col-12" id="donate_container">
+            <h2>Donate!</h2>
+            <div class="col-6" id="donate_photo_box"></div>
+            <div class="col-6 web_text" id="donate_text_box">
+                <p>Now that we know who you are, I know who I am. I’m not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain’s going to be? He’s the exact opposite of the hero. And most times they’re friends, like you and me! I should’ve known way back when... You know why, David? Because of the kids. They called me Mr Glass.</p></div>
+        </div>
+        </main>
+    <footer>
+        <div>
+            <p>Seraphim Singers &copy; 2017</p></div>
+    </footer>
 
-            <div class="rec_story">
-                <a href="http://www.newyorker.com/culture/cultural-comment/lets-celebrate-the-bob-dylan-nobel-win">
-                    <img class="rec_story_photo" src="https://media.newyorker.com/photos/59097adfc14b3c606c109327/4:3/w_474,c_limit/Remnick-Dylan.jpg" height="350" width="350" alt="photo of Bobby Zimmerman With a Guitar">
-                </a>
-                <a href="https://www.newyorker.com/culture/cultural-comment"><h3 class="sec_text">CULTURAL COMMENT</h3> </a>
-                <a href="http://www.newyorker.com/culture/cultural-comment/lets-celebrate-the-bob-dylan-nobel-win"><h2 class="rec_story_title">Let’s Celebrate the Bob Dylan Nobel Win</h2></a>
-                <div class="rec_story_text">
-                    For all the foibles of the prize and its selection committee, can we just bask a little while in this one?
-                </div>
-                <div class="rec_story_byline"> By <a href="http://www.newyorker.com/contributors/david-remnick">David Remnick</a> <span class="date">Oct. 13, 2016</span>
-                </div>
-            </div>
-            <div class="rec_story">
-                <a href="http://www.newyorker.com/books/page-turner/our-favorite-dylan-lyrics">
-                    <img class="rec_story_photo" src="https://media.newyorker.com/photos/59097ad9c14b3c606c109318/4:3/w_474,c_limit/Friedman-Dylan-Nobel.jpg" height="350" width="350" alt="Drawing of Bob with a Hat">
-                </a>
-                <a href="https://www.newyorker.com/books/page-turner"><h3 class="sec_text">PAGE-TURNER</h3> </a>
-                <a href="http://www.newyorker.com/books/page-turner/our-favorite-dylan-lyrics"><h2 class="rec_story_title">Our Favorite Dylan Lyrics</h2></a>
-                <div class="rec_story_text">
-                    New Yorker writers and editors on words from the newly minted Nobel laureate that have stuck with them.
-                </div>
-                <div class="rec_story_byline"> By <a href="http://www.newyorker.com/contributors/the-new-yorker">The New Yorker</a> <span class="date">Oct. 13, 2016</span>
-                </div>
-            </div>
-            <div class="rec_story">
-                <a href="https://www.newyorker.com/magazine/2018/02/12/the-white-darkness">
-                    <img class="rec_story_photo" src="https://media.newyorker.com/photos/5a74fe2ecec624164b82a136/4:3/w_474,c_limit/r31463.jpg" height="350" width="350" alt="Photo of a very cold man">
-                </a>
-                <a href=""><h3 class="sec_text">A REPORTER AT LARGE</h3> </a>
-                <a href="https://www.newyorker.com/magazine/2018/02/12/the-white-darkness"><h2 class="rec_story_title">The White Darkness: A Journey Across Antarctica</h2></a>
-                <div class="rec_story_text">
-                    A solitary journey across Antarctica.
-                </div>
-                <div class="rec_story_byline"> By <a href="https://www.newyorker.com/contributors/david-grann">David Grann</a> <span class="date"></span>
-                </div>
-            </div>
-            <div class="rec_story">
-                <a href="https://www.newyorker.com/humor/borowitz-report/military-refuses-to-participate-in-trumps-parade-citing-bone-spurs">
-                    <img class="rec_story_photo" src="https://media.newyorker.com/photos/5a7b207db5affa4807a90992/4:3/w_474,c_limit/Borowitz-Military-Refuses-to-Participate-in-Trumps-Parade.jpg" height="350" width="350" alt="Photo of an imitation President">
-                </a>
-                <a href=""><h3 class="sec_text">Satire from The Borowitz Report</h3> </a>
-                <a href="https://www.newyorker.com/humor/borowitz-report/military-refuses-to-participate-in-trumps-parade-citing-bone-spurs"><h2 class="rec_story_title">Military Refuses to Participate in Trump’s Parade, Citing Bone Spurs</h2></a>
-                <div class="rec_story_text">
-                    “Regrettably, we have no choice but to issue thousands of deferments,” a Pentagon spokesman said.
-                </div>
-                <div class="rec_story_byline"> By <a href="https://www.newyorker.com/contributors/andy-borowitz">Andy Borowitz</a> <span class="date">Feb. 07, 2018</span>
-                </div>
-            </div>
-
-        </section>
-        <hr>
-        <footer>
-            <div id="promos">
-                <ul>
-                    <li><a href="https://www.newyorker.com/podcast/the-new-yorker-radio-hour">Listen to the New Yorker Radio Hour</a></li>
-                    <li><a href="http://www.condenaststore.com/-st/New-Yorker-Covers-Prints_c147247_.htm">Buy the Cover</a></li>
-                    <li><a href="https://www.newyorker.com/jigsaw">Play the Jigsaw Puzzle</a></li>
-                </ul>
-            </div>
-            <div id="social_media">
-                <ul>
-                    <!-- letters used here in place of icons -->
-                    <li><a href="https://www.facebook.com/newyorker/">F</a></li>
-                    <li><a href="https://twitter.com/NewYorker">T</a></li>
-                    <li><a href="https://www.snapchat.com/add/newyorkermag">S</a></li>
-                    <li><a href="https://www.youtube.com/user/NewYorkerDotCom">Y</a></li>
-                    <li><a href="https://www.instagram.com/newyorkermag/">I</a></li>
-                </ul>
-            </div>
-            <div id="footerlists">
-                <ul class="categories">
-                    <li><a href="https://www.newyorker.com/news">News &amp; Politics</a>
-                        <ul class="sub_categories">
-                            <li><a href="https://www.newyorker.com/news/daily-comment">Daily Comment</a></li>
-                            <li><a href="https://www.newyorker.com/news/john-cassidy">John Cassidy</a></li>
-                            <li><a href="https://www.newyorker.com/news/amy-davidson">Amy Davidson</a></li>
-                            <li><a href="https://www.newyorker.com/news/ryan-lizza">Ryan Lizza</a></li>
-                            <li><a href="https://www.newyorker.com/news/benjamin-wallace-wells">Benjamin Wallace-Wells</a></li>
-                        </ul></li>
-                    <li><a href="https://www.newyorker.com/culture">Culture</a></li>
-                    <li><a href="https://www.newyorker.com/business">Business, Science &amp; Tech</a></li>
-
-                    <!-- the rest is left as a mental exercise for the reader. It could go on. And on. -->
-
-                </ul>
-            </div>
-            <div id="disclaimers">
-                <a href="http://www.condenast.com/">Condé Nast</a>
-                © 2018 Condé Nast. All rights reserved. Use of this site constitutes acceptance of our user agreement (effective 1/2/2016) and privacy policy (effective 1/2/2016). Your California privacy rights. The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with prior written permission of Condé Nast. The New Yorker may earn a portion of sales from products and services that are purchased through links on our site as part of our affiliate partnerships with retailers.
-            </div>
-            <div id="oursites-dropdown">
-            </div>
-        </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
     </body>
+
 </html>

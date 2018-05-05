@@ -1,9 +1,0 @@
-/* Webfont: FiraSans-Bold */@font-face {
-    font-family: 'FiraSans';
-    src: url('FiraSans-Bold.woff2') format('woff2'), /* Modern Browsers */
-         url('FiraSans-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
-             font-style: normal;
-    font-weight: bold;
-    text-rendering: optimizeLegibility;
-}
-

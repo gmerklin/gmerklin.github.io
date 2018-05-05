@@ -1,0 +1,9 @@
+/* Webfont: GorhamNorton */@font-face {
+    font-family: 'GorhamNorton';
+    src: url('GorhamNorton29decB.woff2') format('woff2'), /* Modern Browsers */
+         url('GorhamNorton29decB.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

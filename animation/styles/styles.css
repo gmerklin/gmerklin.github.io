@@ -1,0 +1,287 @@
+
+@font-face {
+    font-family: 'GorhamNorton';
+    src: url('../fonts/GorhamNorton/Web-PS/GorhamNorton29decB.woff2') format('woff2'), /* Modern Browsers */
+         url('../fonts/GorhamNorton/Web-PS/GorhamNorton29decB.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+        
+        body{
+            font-family: GorhamNorton ;
+            font-size: 150% ;}
+
+ #cover{
+                background-color: black ;
+                /*                position: static ;*/
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex ;
+                /*                width=100vw;*/
+                position: absolute ;
+                height: 100vh ;
+                width: 100vw ;
+                z-index:1 ;
+                -webkit-box-pack: center ;
+                    -ms-flex-pack: center ;
+                        justify-content: center ;
+                -webkit-box-align: center ;
+                    -ms-flex-align: center ;
+                        align-items: center ;
+                color: white ;
+                font-size: 3em ;
+                -webkit-transition: opacity 2s ;
+                -o-transition: opacity 2s ;
+                transition: opacity 2s ;
+            }
+            
+            .container{
+                height: 100vh ;
+                /*                width: 750px ;*/
+
+                background-color: gray ;
+                display:-webkit-box;
+                display:-ms-flexbox;
+                display:flex ;
+                -webkit-box-pack: center ;
+                    -ms-flex-pack: center ;
+                        justify-content: center ;
+                -webkit-box-align :center;
+                    -ms-flex-align :center;
+                        align-items :center;
+                z-index: 10 ;
+
+            }
+            .spinbox{
+                height: 500px;
+                width: 500px;
+                position: relative ;
+                -webkit-animation-name: spin ;
+                        animation-name: spin ;
+                -webkit-animation-delay: 5s ;
+                        animation-delay: 5s ;
+                -webkit-animation-duration: 5s ;
+                        animation-duration: 5s ;
+                -webkit-animation-timing-function: linear ;
+                        animation-timing-function: linear ;
+                -webkit-animation-iteration-count: 1 ;
+                        animation-iteration-count: 1 ;
+                background-color: lightgrey ;
+                display:-webkit-box;
+                display:-ms-flexbox;
+                display:flex ;
+
+            }
+
+            .ball{
+                background-color: lightgrey ;
+                /*                border-radius: 66% ;*/
+                width: 50px ;
+                height: 50px ;
+                -webkit-animation-name: ballbounce ;
+                        animation-name: ballbounce ;
+                -webkit-animation-delay: 5s ;
+                        animation-delay: 5s ;
+                -webkit-animation-duration: 5s ;
+                        animation-duration: 5s ;
+                -webkit-animation-timing-function: linear;
+                        animation-timing-function: linear;
+                -webkit-animation-iteration-count: 2 ;
+                        animation-iteration-count: 2 ;
+                position: relative ;
+
+            }
+
+            #target1{
+                width: 100px ;
+                height: 100px ;
+                background-color: beige ;
+                position:absolute ;
+                top: 50vh ;
+                left: 50vw ;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex ;
+                -webkit-box-align: center ;
+                    -ms-flex-align: center ;
+                        align-items: center ;
+                -webkit-box-pack: center ;
+                    -ms-flex-pack: center ;
+                        justify-content: center ;
+                z-index: 5 ;
+            }
+
+
+            @-webkit-keyframes spin{
+                0%{
+                    -webkit-transform: rotate(0deg) scale(1);
+                            transform: rotate(0deg) scale(1);
+
+                }
+                50%{
+                    -webkit-transform: rotate(-180deg) scale(1.4);
+                            transform: rotate(-180deg) scale(1.4);
+
+                }
+                100%{
+                    -webkit-transform: rotate(-360deg) scale(1);
+                            transform: rotate(-360deg) scale(1);
+
+                }
+            }
+
+
+            @keyframes spin{
+                0%{
+                    -webkit-transform: rotate(0deg) scale(1);
+                            transform: rotate(0deg) scale(1);
+
+                }
+                50%{
+                    -webkit-transform: rotate(-180deg) scale(1.4);
+                            transform: rotate(-180deg) scale(1.4);
+
+                }
+                100%{
+                    -webkit-transform: rotate(-360deg) scale(1);
+                            transform: rotate(-360deg) scale(1);
+
+                }
+            }
+            @-webkit-keyframes pulse{
+
+                0%{
+                    -webkit-transform: scale(1);
+                            transform: scale(1);
+                }
+                50%{
+                    -webkit-transform: scale(1.1);
+                            transform: scale(1.1);
+                }
+                100%{
+                    -webkit-transform: scale(1);
+                            transform: scale(1);
+                }
+            }
+            @keyframes pulse{
+
+                0%{
+                    -webkit-transform: scale(1);
+                            transform: scale(1);
+                }
+                50%{
+                    -webkit-transform: scale(1.1);
+                            transform: scale(1.1);
+                }
+                100%{
+                    -webkit-transform: scale(1);
+                            transform: scale(1);
+                }
+            }
+
+            @-webkit-keyframes ballbounce {
+
+
+                0%{
+                    top: 0%;
+                    left: 0%;
+                    /*                    transform: rotate(0deg);*/
+                    -webkit-transform: rotatex(0deg);
+                            transform: rotatex(0deg);
+                    background-color: violet ;
+
+                }
+
+
+                25%{
+                    top: 0%;
+                    left: 90% ;
+                    /*                    transform: rotate(-360deg);*/
+                    -webkit-transform: rotatex(90deg);
+                            transform: rotatex(90deg);
+                    background-color: cyan ;
+                }
+
+                50%{
+                    top: 90%;
+                    left: 90% ;
+                    /*                    transform: rotate(-720deg);*/
+                    -webkit-transform: rotatex(180deg);
+                            transform: rotatex(180deg);
+                    background-color: yellow ;
+                }
+
+                75%{
+                    top: 90%;
+                    left: 0%;
+                    /*                    transform: rotate(-1080deg);*/
+                    -webkit-transform: rotatex(270deg);
+                            transform: rotatex(270deg);
+                    background-color: orangered;
+                }
+                100%{
+
+                    top: 0%;
+                    left: 0%;
+                    /*                    transform: rotate(-1440deg);*/
+                    -webkit-transform: rotatex(360deg);
+                            transform: rotatex(360deg);
+                    background-color: violet ;
+                }
+
+
+            }
+
+            @keyframes ballbounce {
+
+
+                0%{
+                    top: 0%;
+                    left: 0%;
+                    /*                    transform: rotate(0deg);*/
+                    -webkit-transform: rotatex(0deg);
+                            transform: rotatex(0deg);
+                    background-color: violet ;
+
+                }
+
+
+                25%{
+                    top: 0%;
+                    left: 90% ;
+                    /*                    transform: rotate(-360deg);*/
+                    -webkit-transform: rotatex(90deg);
+                            transform: rotatex(90deg);
+                    background-color: cyan ;
+                }
+
+                50%{
+                    top: 90%;
+                    left: 90% ;
+                    /*                    transform: rotate(-720deg);*/
+                    -webkit-transform: rotatex(180deg);
+                            transform: rotatex(180deg);
+                    background-color: yellow ;
+                }
+
+                75%{
+                    top: 90%;
+                    left: 0%;
+                    /*                    transform: rotate(-1080deg);*/
+                    -webkit-transform: rotatex(270deg);
+                            transform: rotatex(270deg);
+                    background-color: orangered;
+                }
+                100%{
+
+                    top: 0%;
+                    left: 0%;
+                    /*                    transform: rotate(-1440deg);*/
+                    -webkit-transform: rotatex(360deg);
+                            transform: rotatex(360deg);
+                    background-color: violet ;
+                }
+
+
+            }

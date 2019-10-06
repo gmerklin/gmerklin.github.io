@@ -1,0 +1,398 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+    box-sizing: border-box;
+}
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+  float: left;
+  padding: 15px;
+  border: 5px solid white;
+}
+
+body{
+		font-family: mr-eaves-xl-modern, Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 20px;
+}
+h1, h2, h3, h4 {
+	font-family: mr-eaves-xl-modern, Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+em{
+	font-style: italic ;
+}
+strong{
+	font-weight: 600 ;
+}
+.content_article{
+    width: 35em;
+    margin: 0 auto 25px;
+    max-width: 100%;
+    padding-left: 5px;
+}
+.pageheader{
+	margin-top: 1em ;
+	margin-bottom: 1em ;
+}
+.sectitle{
+	margin-top: 1em ;
+	margin-bottom: 0.5em ;
+}
+.topbox{
+	display:flex ;
+	background-color:#00A7B5;
+/*	border: 5px solid white ;*/
+}
+.logobox{
+    padding: 28px 8px 8px 14px;
+}
+.logo{
+    max-height: 130px;
+    max-width: 280px;
+	padding-top: 10px;
+    background-color: #00A7B5;
+}
+
+.topnav{
+	font-family: mr-eaves-xl-modern, Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    padding-top: 75px;
+    padding-left: 0px;
+}
+
+.topnav .icon {
+    display: none;
+}
+.topnav li{
+    font-size: .9em ;
+    float: left;
+    display: inline-flex;
+    padding: 14px 14px 0px 4px
+}
+.fbook {
+	height: 40px ;
+	margin-top: 10px;
+	margin-right: 15px;
+	padding-top: 10px;
+}
+.venue{	
+	margin-top: 1em ;
+}
+.clip {
+	margin-top: 1em ;
+}
+
+.purchase{
+	float: right ;
+}
+audio{
+	max-width: 100% ;
+}
+
+button{
+	font-family: mr-eaves-xl-modern, Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    background-color: green;
+    border-radius: 15px;
+	border-style: none ;
+    font-size: 1em ;
+    padding: 10px;
+    position: relative;
+    top: -10px;
+}
+button:hover {
+	color: #FFCD00;
+}
+/*
+#tickets {
+	background-color: lightgreen ;
+	border-radius: 15px ;
+	font-size: 20px;
+	padding: 10px ;
+	position: relative;
+	top: -15px;
+}
+*/
+
+a{
+	text-decoration: none ;
+}
+
+.topnav a:link {
+  color: black;
+}
+
+/* visited link */
+.topnav a:visited {
+  color: black;
+}
+
+/* mouse over link */
+.topnav a:hover {
+  color: #FFCD00;
+}
+
+/* selected link */
+.topnav a:active {
+  color: #FFCD00;
+} 
+
+.maincontent a{
+	text-decoration: underline;
+}
+
+.maincontent a:link {
+  color: black;
+}
+
+/* visited link */
+.maincontent a:visited {
+  color: black;
+}
+
+/* mouse over link */
+.maincontent a:hover {
+  color: #FFCD00;
+}
+
+/* selected link */
+.maincontent a:active {
+  color: #FFCD00;
+} 
+
+a{
+	text-decoration: none ;
+}
+
+a:link {
+  color: blue;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: #FFCD00;
+}
+
+/* selected link */
+a:active {
+  color: #FFCD00;
+} 
+
+
+/*p a:link {color:blue;}*/
+
+h1{font-size: 2em;}
+h2{font-size: 1.4em;
+/*font-family: mr-eaves-xl-modern, Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";*/
+}
+
+#hero{
+	padding-left: 5px;
+	padding-right: 5px ;
+	background-color:#00A7B5 ;
+}
+#hero img{
+	width:100%;
+}
+/*
+.maincontent{
+	position: absolute;
+	width: 100%;
+	margin: 1% ;
+	margin-left: 1%;
+}
+*/
+
+
+/*
+.row{
+	display: flex;
+}
+*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#concerts {
+	background-color: #AC2B5F ;
+}
+
+#musicians{
+	background-color: #007378 ;
+}
+#about_us{
+	background-color: #F36DA3 ;
+}
+
+
+#participate{
+    background-color: #A68300;
+}
+
+#press{
+	background-color: #23868B ;
+}
+
+#watch_and_listen{
+	background-color: orange ;
+}
+#contact {
+/*	position: absolute;*/
+	background-color: gray;
+	padding-top: 10px;
+	text-align: center ;
+	clear:left;
+	width: 100%;
+}
+
+footer{
+	background-color: #FFCD00;
+	border: 5px solid white;
+	padding-top: 50px;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	text-align: left ;
+	clear:left;
+	width: 100%;
+}
+footer a:link{
+	color:black;
+}
+footer a:hover{
+	color: green;}
+
+
+/* page specific styling */
+
+
+#the_director p {
+	text-indent: 1em ;
+}
+
+#the_singers p {
+	text-indent: 1em ;
+}
+#the_singers{
+	margin-bottom: 2em ;
+}
+
+#jenphoto{
+	float: right ;
+	margin: 25px ;
+}
+#chorusphoto{
+	float:right ;
+	max-height: 200px;
+	margin: 25px;
+}
+
+/* Audio-video page styling */
+
+
+.cd_covers{
+	float:left ;
+	max-width: 144px ;
+	margin-right: 20px ;
+	margin-top: 20px ;
+}
+#recordings h2{
+	margin-top: 1em ;
+}
+
+/* media queries */
+@media screen and (max-width: 600px) {
+    .topnav li {
+        display: none;
+    }
+/*
+	 .topnav a:not(:first-child) {
+        display: none;
+    }
+*/
+	
+    .topnav a.icon {
+/*        float: left;*/
+/*        position: absolute ;*/
+		right: 75px ;
+		top: 75px ;
+		display: block;
+    }
+
+    .topnav.responsive {
+		position: relative ;
+		background-color: #00a7b5 ;
+	}
+    .topnav.responsive .icon {
+/*		position: absolute;*/
+        right: 75px;
+        top: 75px;
+    }
+
+.topnav.responsive li {
+/*        float: right ;*/
+        display:block;
+	width: 100% ;
+        text-align: left;
+		background-color:#00a7b5;
+	}
+}
+/*
+
+@media only screen and (min-width: 600px) {
+   For tablets: 
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+*/
+
+@media only screen and (min-width: 600px) {
+/*   For desktop: */
+	.row {display: flex ;}
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+/*
+@media all {html {font-size: 24px;}}
+@media all and (max-width:1000px){html {font-size: 24px;}}
+@media all and (max-width:960px){html {font-size: 23px;}}
+@media all and (max-width:920px){html {font-size: 22px;}}
+@media all and (max-width:880px){html {font-size: 21px;}}
+@media all and (max-width:840px){html {font-size: 20px;}}
+@media all and (max-width:800px){html {font-size: 19px;}}
+@media all and (max-width:760px){html {font-size: 18px;}}
+@media all and (max-width:720px){html {font-size: 17px;}}
+@media all and (max-width:680px){html {font-size: 16px;}}
+@media all and (max-width:640px){html {font-size: 15px;}}
+@media all and (max-width:600px){html {font-size: 14px;}}
+@media all and (max-width:560px){html {font-size: 13px;}}
+@media all and (max-width:520px){html {font-size: 12px;}}
+
+@media all and (max-width:520px) {
+    html{ font-size: 18px;}
+}
+*/

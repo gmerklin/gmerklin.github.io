@@ -30,6 +30,9 @@ strong{
     max-width: 100%;
     padding-left: 5px;
 }
+.content_article p:not(first-child){
+	margin-top: 1em ;
+}
 .pageheader{
 	margin-top: 1em ;
 	margin-bottom: 1em ;
@@ -90,7 +93,7 @@ audio{
 
 button{
 	font-family: mr-eaves-xl-modern, Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-    background-color: green;
+    background-color: #ffcd00;
     border-radius: 15px;
 	border-style: none ;
     font-size: 1em ;
@@ -99,7 +102,7 @@ button{
     top: -10px;
 }
 button:hover {
-	color: #FFCD00;
+	color: #db0a5b;
 }
 /*
 #tickets {
@@ -181,7 +184,10 @@ a:active {
   color: #FFCD00;
 } 
 
-
+.quote {
+	padding-left: 1em;
+	padding-right: 1em ;
+}
 /*p a:link {color:blue;}*/
 
 h1{font-size: 2em;}
@@ -219,6 +225,9 @@ h2{font-size: 1.4em;
 }
 #concerts {
 	background-color: #AC2B5F ;
+}
+#concerts button{
+	margin-top: 1em ;
 }
 
 #musicians{
@@ -269,13 +278,8 @@ footer a:hover{
 /* page specific styling */
 
 
-#the_director p {
-	text-indent: 1em ;
-}
 
-#the_singers p {
-	text-indent: 1em ;
-}
+
 #the_singers{
 	margin-bottom: 2em ;
 }

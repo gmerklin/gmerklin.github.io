@@ -139,7 +139,7 @@ a{
 } 
 
 .maincontent a{
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .maincontent a:link {
@@ -247,7 +247,7 @@ h2{font-size: 1.4em;
 }
 
 #watch_and_listen{
-	background-color: orange ;
+	background-color: #A68300 ;
 }
 #contact {
 /*	position: absolute;*/

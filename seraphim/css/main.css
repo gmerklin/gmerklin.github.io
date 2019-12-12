@@ -14,6 +14,7 @@
 body{
 		font-family: mr-eaves-xl-modern, Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	font-size: 20px;
+    background-color: linen ;
 }
 h1, h2, h3, h4 {
 	font-family: mr-eaves-xl-modern, Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
@@ -224,14 +225,14 @@ h2{font-size: 1.4em;
   display: table;
 }
 #concerts {
-	background-color: #AC2B5F ;
+	background-color: #F36DA3 ;
 }
 #concerts button{
 	margin-top: 1em ;
 }
 
 #musicians{
-	background-color: #007378 ;
+	background-color: #37D5DC ;
 }
 #about_us{
 	background-color: #F36DA3 ;
@@ -243,7 +244,7 @@ h2{font-size: 1.4em;
 }
 
 #press{
-	background-color: #23868B ;
+	background-color: #37D5DC ;
 }
 
 #watch_and_listen{
